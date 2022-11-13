@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Skeleton from 'react-loading-skeleton';
 import { useParams } from 'react-router-dom';
 import { List } from './Reviews.styled';
-export const Reviews = () => {
+const Reviews = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(false);
   const [reviews, setReviews] = useState([]);
@@ -66,3 +66,4 @@ export const Reviews = () => {
     </>
   );
 };
+export default Reviews;

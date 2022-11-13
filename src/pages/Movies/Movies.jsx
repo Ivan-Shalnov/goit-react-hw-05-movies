@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 import noPosterImage from './img/noposter.png';
 import Skeleton from 'react-loading-skeleton';
-export const Movies = () => {
+const Movies = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(false);
   const [data, setData] = useState();
@@ -96,3 +96,4 @@ export const Movies = () => {
     </>
   );
 };
+export default Movies;

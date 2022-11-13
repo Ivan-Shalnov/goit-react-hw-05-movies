@@ -7,7 +7,7 @@ import { getMovieCredits } from 'api/getMovieCredits';
 import { List } from './Cast.styled';
 import noPhotoImg from './img/nophoto.png';
 
-export const Cast = () => {
+const Cast = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(false);
   const [cast, setCast] = useState([]);
@@ -71,3 +71,4 @@ export const Cast = () => {
     </List>
   );
 };
+export default Cast;
