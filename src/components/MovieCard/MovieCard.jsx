@@ -11,7 +11,6 @@ export const MovieCard = ({ movieId }) => {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(false);
   const location = useLocation();
-  console.log(location.state);
   const [movieData, setMovieData] = useState(null);
   const userScore = movieData ? (movieData?.vote_average * 10).toFixed(1) : 0;
   useEffect(() => {
